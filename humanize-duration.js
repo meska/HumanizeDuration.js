@@ -98,7 +98,17 @@ http://git.io/j0HgmQ
       minute: function(c) { return ["minuta", "minuty", "minuty", "minut"][getPolishForm(c)]; },
       second: function(c) { return ["sekunda", "sekundy", "sekundy", "sekund"][getPolishForm(c)]; },
       millisecond: function(c) { return ["milisekunda", "milisekundy", "milisekundy", "milisekund"][getPolishForm(c)]; }
-    }
+    },
+    it: {
+      year: function(c) { return "ann" + ((c !== 1) ? "i" : "o"); },
+      month: function(c) { return "mes" + ((c !== 1) ? "i" : "e"); },
+      week: function(c) { return "settiman" + ((c !== 1) ? "e" : "a"); },
+      day: function(c) { return "giorn" + ((c !== 1) ? "i" : "o"); },
+      hour: function(c) { return "or" + ((c !== 1) ? "e" : "a"); },
+      minute: function(c) { return "minut" + ((c !== 1) ? "i" : "o"); },
+      second: function(c) { return "second" + ((c !== 1) ? "i" : "o"); },
+      millisecond: function(c) { return "millisecond" + ((c !== 1) ? "i" : "o"); }
+    },
   };
 
   // Start by defining the units and how many ms is in each.
